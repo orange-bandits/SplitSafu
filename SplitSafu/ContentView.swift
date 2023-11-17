@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
+struct ContentView: View { // Anything you draw on screen must be a View.
+    // View requires you to have a computed property body.
+    var body: some View { // some View = "something" that conforms to View.
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -19,6 +20,7 @@ struct ContentView: View {
     }
 }
 
+// Configuration to see this view (component) in preview mode. Kind of like Storybook but much better.
 #Preview {
     ContentView()
 }
